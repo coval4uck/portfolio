@@ -1,0 +1,41 @@
+
+  .hero-section{
+    height: calc(100vh - 72px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-title {
+    font-size: clamp(1.875rem, 1.239rem + 3.18vw, 3.625rem);
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: var(--color-heading-default);
+    font-family: "Poppins", bold;
+  }
+  .hero-my-photo {
+    width: 348px;
+    height: 348px;
+    background: linear-gradient(to top, var(--gradient-text));
+    border-radius: 100%;
+    padding: 8px;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-section{
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+    }
+    .hero-title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      line-height: 50px;
+    }
+    .hero-my-photo {
+      width: 270px;
+      height: 270px;
+    }
+  }
+  
+  

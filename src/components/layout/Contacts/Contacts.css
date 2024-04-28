@@ -1,0 +1,14 @@
+
+.contacts{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contact-email{
+    font-size: 25px;
+    letter-spacing: -1px;
+    text-decoration: bold;
+}

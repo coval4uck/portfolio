@@ -1,0 +1,25 @@
+.menu{
+    display: flex;
+    gap: 50px;
+}
+.menu-link{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color-content-default);
+    font-family: 'DM Sans', medium;    
+}
+
+@media (max-width: 1024px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+    .menu-link{
+        padding: 20px;
+        width: 100%;
+    }
+}

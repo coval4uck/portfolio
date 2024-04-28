@@ -1,0 +1,63 @@
+.about{
+   margin: 70px 0;
+}
+
+.wrapper-info  {
+    max-width: 704px;
+    width: 100%;
+}
+.description{
+    margin-bottom: 38px;
+}
+.experience-items{
+    margin-bottom: 38px;
+}
+.experience-item{
+    padding-bottom: 22px;
+    border-bottom: 2px solid rgba(235, 234, 237, 1);
+}
+.experience-item > div{
+    display: flex;
+    justify-content: space-between;
+}
+.experience-name{
+    color: var(--color-content-default);
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', Regular;
+}
+.experience-time{
+    flex-shrink: 0;
+    border-radius: 100px;
+    height: 30px;
+    padding: 2px 22px;
+    background: rgba(215, 255, 224, 1);
+    font-family: 'poppins', semibold;
+    font-size: 9px;
+    line-height: 26px;
+    color: rgba(1, 140, 15, 1);
+}
+.info-company{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.info-company > a {
+    text-decoration: none;
+    color: var(--color-content-default);
+    display: flex;
+    align-items: start;
+    gap: 2px;
+}
+.company-icon{
+    width: 30px;
+    height: 20px;
+    
+    fill: var(--color-content-default);
+}
+.location-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--color-content-default);
+}
