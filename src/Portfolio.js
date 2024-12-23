@@ -16,7 +16,7 @@ function Portfolio() {
         <Routes>
           <Route path='/about' element = {<About />}/>
           <Route path='/' 
-          element={
+          element = {
             <>
               <HeroSection />
               <SkillsSection />

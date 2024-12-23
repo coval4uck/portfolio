@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Portfolio from './Porfolio';
+import Portfolio from './Portfolio';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from './provider/ThemeProvider';
@@ -10,7 +10,7 @@ import { ThemeProvider } from './provider/ThemeProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-      <BrowserRouter>
+      <BrowserRouter  basename='/'>
         <ThemeProvider>
           <Portfolio />
         </ThemeProvider>
