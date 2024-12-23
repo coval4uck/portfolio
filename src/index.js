@@ -10,7 +10,7 @@ import { ThemeProvider } from './provider/ThemeProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
         <ThemeProvider>
           <Portfolio />
         </ThemeProvider>
