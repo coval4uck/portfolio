@@ -1,7 +1,6 @@
 .about{
    margin: 70px 0;
 }
-
 .wrapper-info  {
     max-width: 704px;
     width: 100%;
@@ -53,7 +52,6 @@
 .company-icon{
     width: 30px;
     height: 20px;
-    
     fill: var(--color-content-default);
 }
 .location-icon{

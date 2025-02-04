@@ -1,6 +1,8 @@
 import "./skills-section.css";
+import {motion} from 'framer-motion'
 import Item from "./Item/Item";
 import icons from "../../../img/symbol-defs.svg";
+
 
 const dataSkills = [
   {
@@ -34,21 +36,51 @@ const dataSkills = [
     pathIcon: `${icons}#icon-github`,
   },
 ];
-
+const titleAnimation = {
+  hidden:{
+    opacity:0,
+  },
+  visible:{
+    opacity:1,
+  }
+}
+const subTitleAnimation = {
+  hidden:{
+    opacity: 0,
+    x:-1000,
+  },
+  visible:{
+    opacity:1,
+    x:0
+  }
+}
 const SkillsSection = () => {
   return (
-    <section className="skills-section">
-      <h2 className="skills-section__title">My Tech Stack</h2>
-      <p className="skills-section__text">
-        {" "}
+    <motion.section className="skills-section"
+      initial = 'hidden'
+      whileInView = 'visible'
+      viewport = {{amount:0.4}}
+    >
+      <motion.h2 className="skills-section__title"
+        transition = {{duration:1}}
+        variants={titleAnimation}
+      >My Tech Stack</motion.h2>
+      <motion.p className="skills-section__text"
+      
+      transition = {{duration:1}}
+      variants={subTitleAnimation}
+      >
         Technologies I’ve been working with recently
-      </p>
-      <ul className="skills-section__lists">
+      </motion.p>
+      <ul className="skills-section__lists"
+      >
         {dataSkills.map((item) => (
-          <Item link={item.link} pathIcon={item.pathIcon} key={item.id} />
+          <Item 
+          link={item.link} pathIcon={item.pathIcon} id={item.id} key={item.id} />
+          
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 };
 
