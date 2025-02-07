@@ -10,7 +10,7 @@ const messengersList = [
   {
     id: 1,
     pathIcon: `${pathSvg}#icon-twitter`,
-    link: "",
+    link: "https://x.com/Kovalchuk2025",
   },
   {
     id: 2,

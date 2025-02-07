@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Menu.css";
+import { useState } from "react";
+import {motion, AnimateSharedLayout} from "framer-motion";
 
 const links = [
   { id: 0, name: "Home", link: "/" },
@@ -15,14 +17,23 @@ const Menu = (props) => {
       props.closeMenu();
     }
   };
+  const [activeLink,setActiveLink] = useState(0)
   return (
     <ul className="menu">
-      {links.map((item) => {
+     {links.map((item) => {
         return (
-          <li className="menu-item" key={item.id} onClick={closeMenu}>
-            <Link to={item.link} className="menu-link">
+          <li className="menu-item" key={item.id} 
+          
+          onClick={() => {
+            closeMenu()
+            setActiveLink(item.id)
+          }}
+          >
+            <Link to={item.link}  className="menu-link"
+            >
               {item.name}
             </Link>
+            {activeLink === item.id && <ActiveLine />}
           </li>
         );
       })}
@@ -31,3 +42,20 @@ const Menu = (props) => {
 };
 
 export default Menu;
+
+const ActiveLine = () => {
+  return(
+    <motion.div
+    layoutId
+    style = {{
+      width: '100%',
+      height: 4,
+      borderRadius: 5,
+      position: 'absolute',
+      background:'red',
+      bottom: "-8px"
+    }}>
+
+    </motion.div>
+  )
+}

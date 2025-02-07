@@ -1,7 +1,7 @@
 import "./About.css";
 import "../../globalStyle/global.css";
 import pathIcon from "../../../img/symbol-defs.svg";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const itemAnimation = {
   hidden: {
