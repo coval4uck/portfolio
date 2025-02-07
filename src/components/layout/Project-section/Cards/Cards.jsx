@@ -10,8 +10,8 @@ const dataCard = [
         pathImg:`${imgProjectServices}`,
         text:"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         stack:'Html, Scss, Js.',
-        linkPreview:'',
-        linkCode:''
+        linkPreview:'https://coval4uck.github.io/TechService/',
+        linkCode:'https://github.com/coval4uck/TechService/blob/master/index.html'
     },
     {
         id:1,

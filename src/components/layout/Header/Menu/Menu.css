@@ -2,6 +2,9 @@
     display: flex;
     gap: 50px;
 }
+.menu-item{
+    position: relative;
+}
 .menu-link{
     display: block;
     text-decoration: none;

@@ -2,6 +2,8 @@ import './Card.css'
 import CardNavigate from './CardNavigate/CardNavigate'
 
 const Card = ({id,name,pathImg,text,stack,linkPreview,linkCode}) => {
+  
+  
     return(
         <article className="card">
             <img
@@ -15,7 +17,7 @@ const Card = ({id,name,pathImg,text,stack,linkPreview,linkCode}) => {
               <p className="card-info">
                 <b>Tech stac: </b> {stack}
               </p>
-              <CardNavigate  {...linkPreview} {...linkCode}/>
+              <CardNavigate linkPreview={linkPreview} linkCode={linkCode}/>
               
             </div>
         </article>
