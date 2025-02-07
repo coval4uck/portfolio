@@ -1,9 +1,0 @@
-.messengers{
-    display: flex;
-    gap: 20px;
-}    
-.messengers__icon{
-    fill: var(--color-content-default);
-    width: 30px;
-    height: 30px;
-}
