@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./CheckedBackground.css";
 import icons from "../../../img/symbol-defs.svg";
 import { useTheme } from "../../../hooks/useTheme";

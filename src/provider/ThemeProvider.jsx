@@ -10,7 +10,6 @@ export const ThemeProvider = ({children,...props}) => {
 
     function changeTheme(theme){
         setTheme(theme)
-        console.log(theme);
         ChangeCssVariableRoot(theme)
         locStorage.setItem(theme)
     }

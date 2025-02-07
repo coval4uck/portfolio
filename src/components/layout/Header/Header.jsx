@@ -6,16 +6,6 @@ import Menu from "./Menu/Menu";
 import Logo from "../../Elements/Logo/Logo";
 import { motion } from "framer-motion";
 
-const burgerMenuAnimation = {
-  open:{
-
-  },
-  closed:{
-    
-  }
-}
-
-
 const Header = () => {
   let [active, setActive] = useState(false);
   const body = document.querySelector('body');
@@ -52,6 +42,7 @@ const Header = () => {
           variants={{
             close:{left:'-100%'},
             open:{left:0 }}}>
+              
             <Menu closeMenu ={toggleMenu} active = {active}/>
             <CheckedBackground />
           </motion.div>
