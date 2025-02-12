@@ -48,7 +48,7 @@ const About = () => {
           initial = 'hidden' animate = 'visible'
           transition={{duration: 0.7, delay:0.5}}
           variants={textAnimation} style={{overflow:'hidden'}}>
-          Hello. My name is Valentyn and I am 21 years old. I am ambitious,
+          Hello. My name is Valentyn and I am 22 years old. I am ambitious,
           active and strive for continuous development. I got acquainted with
           web development back in 2020 in college. I have been studying
           front-end development for about 1 year now. And I really like what I
@@ -108,7 +108,7 @@ const About = () => {
                   <span>Khmelnytskyi</span>
                 </a>
               </div>
-              <p>Sep 2018 - Jun 2022</p>
+              <p className="info-data">Sep 2018 - Jun 2022</p>
             </div>
           </motion.li>
         </motion.ul>

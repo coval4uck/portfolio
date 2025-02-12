@@ -1,6 +1,10 @@
 .about{
    margin: 70px 0;
 }
+.info-data{
+    position: relative;
+    bottom: 0;
+}
 .wrapper-info  {
     max-width: 704px;
     width: 100%;
@@ -38,9 +42,10 @@
     color: rgba(1, 140, 15, 1);
 }
 .info-company{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+    max-width: 400px;
+   
+    gap: 20px;
+    margin-right: 40px;
 }
 .info-company > a {
     text-decoration: none;
@@ -48,6 +53,9 @@
     display: flex;
     align-items: start;
     gap: 2px;
+}
+.info-company > a:nth-child(2){
+    margin-top: 20px;
 }
 .company-icon{
     width: 30px;
