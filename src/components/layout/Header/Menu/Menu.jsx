@@ -4,7 +4,7 @@ import { useState } from "react";
 import {motion, AnimateSharedLayout} from "framer-motion";
 
 const links = [
-  { id: 0, name: "Home", link: "/" },
+  { id: 0, name: "Home", link: "/portfolio" },
   { id: 1, name: "About", link: "/about" },
   { id: 2, name: "Tech Stack", link: "/stack" },
   { id: 3, name: "Projects", link: "/projects" },
